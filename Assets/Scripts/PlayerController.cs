@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 0;
 
+    // base movement off camera pos
+    public Camera cam;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,13 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        Vector3 forward = cam.transform.forward;
+        Vector3 right = cam.transform.right;
+
+        forward.y = 0;
+        right.y = 0;
+
+        Vector3 movement = (forward * movementY) + (right * movementX);
         rb.AddForce(movement * speed);
     }
 
