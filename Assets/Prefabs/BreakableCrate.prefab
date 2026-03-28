@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   droppedObject: {fileID: 0}
   breakFX: {fileID: 4204524069096781531, guid: cba827c1266c7b7488f64e33378cc317, type: 3}
+  breakSound: {fileID: 8300000, guid: 9c9c16d94062c314da8c031a4ea8c282, type: 3}
 --- !u!65 &1743090713061585322
 BoxCollider:
   m_ObjectHideFlags: 0
