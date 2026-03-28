@@ -9,7 +9,10 @@ public class Coin : MonoBehaviour
     private Animator animator;
 
     public ParticleSystem pickUpFX;
+    public AudioClip pickupSound;
     public float speed = 100f;
+
+    private bool pickedUp = false;
 
     void Start() {
         coinCollider = GetComponent<Collider>();
@@ -22,10 +25,21 @@ public class Coin : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (pickedUp) {
+            return;
+        }
+
         if (other.CompareTag("Player")) {
+            pickedUp = true;
             coinCollider.enabled = false;
             animator.SetTrigger("PickUp");
+
+            LevelManager.Instance.addCoin(1);
+
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position, 0.3f);
+
             Instantiate(pickUpFX, transform.position, Quaternion.identity);
+
             Destroy(gameObject, 1f);
         }
         

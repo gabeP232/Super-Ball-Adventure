@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpFX: {fileID: 110562470544235644, guid: e7e33b929fd7b7840b7fb8a6a5366f68, type: 3}
+  pickupSound: {fileID: 8300000, guid: 584888f6bbd8b2449932cead3a37f9d6, type: 3}
   speed: 100
 --- !u!95 &7374900850287080692
 Animator:
