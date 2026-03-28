@@ -1,4 +1,0 @@
-repository "Super Ball Adventure/Super Ball Adventure@20067548468095@cloud"
-  path "/"
-    br "/main"
-    co "/main"
