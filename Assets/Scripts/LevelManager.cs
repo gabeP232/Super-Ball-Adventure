@@ -12,8 +12,11 @@ public class LevelManager : MonoBehaviour
     public int coinsRequired = 0;
     public int buttonsRequired = 0; // 0 - Disabled, 1 - 1 button press needed
 
-    [Header("Level Completion")]
+
+    [Header("HUD Elements")]
     public TextMeshProUGUI winText;
+    public TextMeshProUGUI deathText;
+    public TextMeshProUGUI coinText;
 
     private int coinsCollected = 0;
     private int buttonsPressed = 0;
@@ -22,13 +25,26 @@ public class LevelManager : MonoBehaviour
 
     private void Awake() {
         Instance = this;
+
+        if (coinText != null) {
+            updateCoinUI();
+        }
     }
 
     public void addCoin(int add) {
         coinsCollected = coinsCollected + add;
 
-        Debug.Log("LevelManager -- Coin Picked Up");
+        //Debug.Log("LevelManager -- Coin Picked Up");
+        updateCoinUI();
         checkWin();
+    }
+    
+    private void updateCoinUI()
+    {
+        if (coinText != null)
+        {
+            coinText.text = "Coins: " + coinsCollected + " / " + coinsRequired;
+        }
     }
 
     public void addButtonPress() {
@@ -51,13 +67,22 @@ public class LevelManager : MonoBehaviour
 
         if (coinsSatisfied && buttonsSatisfied) {
             levelComplete = true;
-            Debug.Log("Level complete");
-            Debug.Log(winText);
+            //Debug.Log("Level complete");
+            //Debug.Log(winText);
             if (winText != null) {
-                Debug.Log("TEXT");
+                //Debug.Log("TEXT");
                 winText.gameObject.SetActive(true);
                 winText.enabled = true;
             }
+        }
+    }
+
+    public void PlayerDied() {
+        Debug.Log("Player died");
+
+        if (deathText != null) {
+            deathText.gameObject.SetActive(true);
+            deathText.enabled = true;
         }
     }
 }

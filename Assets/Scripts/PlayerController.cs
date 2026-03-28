@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     // base movement off camera pos
     public Camera cam;
 
+    public ParticleSystem deathFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,9 +44,21 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y;
     }
 
+    private void Kill() {
+        if (deathFX != null) {
+            Instantiate(deathFX, transform.position, Quaternion.identity);
+        }
+        gameObject.SetActive(false);
+        if (LevelManager.Instance) {
+            LevelManager.Instance.PlayerDied();
+        } 
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y < -10f) {
+            Kill();
+        }
     }
 }
