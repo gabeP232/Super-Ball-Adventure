@@ -1289,7 +1289,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257905823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &257905823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3907,7 +3919,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 815993032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &815993032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,7 +4558,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1032441870}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1032441870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4724,7 +4760,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1075930916}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1075930916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,7 +6830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1604165968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1604165968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7504,6 +7564,7 @@ GameObject:
   - component: {fileID: 1717849499}
   - component: {fileID: 1717849498}
   - component: {fileID: 1717849497}
+  - component: {fileID: 1717849501}
   m_Layer: 0
   m_Name: PlayerBallBody
   m_TagString: Untagged
@@ -7597,6 +7658,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1717849501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717849496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4d489e89c595743b9c75f1d4b09556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 3529ee20ddeaa1646b88a8c6ba856024, type: 2}
+  - {fileID: 2100000, guid: 6314f8b6bb1bebd4e984a4023676bbf1, type: 2}
+  - {fileID: 2100000, guid: 2479640b5d0fe704e83e844646c5da0e, type: 2}
+  - {fileID: 2100000, guid: 5fbbaf32ea9ef7f4882174d676b7bba1, type: 2}
+  - {fileID: 2100000, guid: 18234538f8f77fa41a330e80488a367a, type: 2}
+  - {fileID: 2100000, guid: 9418a5fcbafe84543998bd7c831a9ee1, type: 2}
 --- !u!1 &1720611086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8799,7 +8880,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1996438263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717849501}
+        m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1996438263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9170,7 +9263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2106335901
 RectTransform:
   m_ObjectHideFlags: 0
