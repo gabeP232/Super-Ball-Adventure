@@ -36,7 +36,6 @@ public class LevelManager : MonoBehaviour
 
         //Debug.Log("LevelManager -- Coin Picked Up");
         updateCoinUI();
-        checkWin();
     }
     
     private void updateCoinUI()
@@ -47,33 +46,30 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+
     public void addButtonPress() {
         buttonsPressed++;
-        checkWin();
     }
 
     public void removeButtonPress() {
         buttonsPressed--;
-        checkWin();
     }
 
-    private void checkWin() {
-        if (levelComplete) {
-            return;
-        }
+    public void PlayerEnteredWinArea() {
+        Debug.Log("Player entered win area");
+        if (levelComplete) return;
+        TriggerWin();
 
-        bool coinsSatisfied = coinsCollected >= coinsRequired;
-        bool buttonsSatisfied = buttonsRequired == 0 || buttonsPressed >= buttonsRequired;
+    }
 
-        if (coinsSatisfied && buttonsSatisfied) {
-            levelComplete = true;
-            //Debug.Log("Level complete");
-            //Debug.Log(winText);
-            if (winText != null) {
-                //Debug.Log("TEXT");
-                winText.gameObject.SetActive(true);
-                winText.enabled = true;
-            }
+    private void TriggerWin()
+    {
+        levelComplete = true;
+
+        if (winText != null)
+        {
+            winText.gameObject.SetActive(true);
+            winText.enabled = true;
         }
     }
 
