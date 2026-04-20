@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody rb;
-
     private float movementX;
     private float movementY;
 
@@ -57,7 +56,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -10f) {
+        if (transform.position.y < 1f) {
             Kill();
         }
     }

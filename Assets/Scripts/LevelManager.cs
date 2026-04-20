@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
 
@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
     public TextMeshProUGUI winText;
     public TextMeshProUGUI deathText;
     public TextMeshProUGUI coinText;
+    public Button playAgain;
 
     private int coinsCollected = 0;
     private int buttonsPressed = 0;
@@ -76,7 +77,9 @@ public class LevelManager : MonoBehaviour
     public void PlayerDied() {
         Debug.Log("Player died");
 
-        if (deathText != null) {
+        if (playAgain != null) {
+            playAgain.gameObject.SetActive(true);
+            playAgain.enabled = true;
             deathText.gameObject.SetActive(true);
             deathText.enabled = true;
         }
