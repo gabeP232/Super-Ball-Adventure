@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y;
     }
 
-    private void Kill() {
+    public void Kill() {
         if (deathFX != null) {
             Instantiate(deathFX, transform.position, Quaternion.identity);
         }
