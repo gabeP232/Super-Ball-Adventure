@@ -12,6 +12,10 @@ public class LaunchPad : MonoBehaviour
 
         Rigidbody rb = other.attachedRigidbody;
         if (rb != null) {
+            Vector3 v = rb.velocity;
+            v.y = 0f;
+            rb.velocity = v;
+
             rb.AddForce(Vector3.up * strength, ForceMode.Impulse);
         }
     }
