@@ -62,7 +62,8 @@ public class LevelManager : MonoBehaviour
     public void PlayerEnteredWinArea() {
         Debug.Log("Player entered win area");
         if (levelComplete) return;
-        TriggerWin();
+
+        CheckWin();
 
     }
 
