@@ -18,10 +18,9 @@ public class LevelManager : MonoBehaviour
     public int buttonsRequired = 0; // 0 - Disabled, 1 - 1 button press needed
 
     [Header("HUD Elements")]
-    public GameObject winText;
-    public TextMeshProUGUI deathText;
+    public GameObject winUI;
+    public GameObject deathUI;
     public TextMeshProUGUI coinText;
-    public Button playAgain;
 
     private int coinsCollected = 0;
     private int buttonsPressed = 0;
@@ -77,20 +76,17 @@ public class LevelManager : MonoBehaviour
     {
         levelComplete = true;
 
-        if (winText != null)
+        if (winUI != null)
         {
-            winText.SetActive(true);
+            winUI.SetActive(true);
         }
     }
 
     public void PlayerDied() {
         Debug.Log("Player died");
 
-        if (playAgain != null) {
-            playAgain.gameObject.SetActive(true);
-            playAgain.enabled = true;
-            deathText.gameObject.SetActive(true);
-            deathText.enabled = true;
+        if (deathUI != null) {
+            deathUI.gameObject.SetActive(true);
         }
     }
 
