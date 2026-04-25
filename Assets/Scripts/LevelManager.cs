@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class LevelManager : MonoBehaviour
 {
 
     public static LevelManager Instance;
 
+    [Header("Levels")]
+    public string nextLevelName;
+
     [Header("Level Goals")]
     public int coinsRequired = 0;
     public int buttonsRequired = 0; // 0 - Disabled, 1 - 1 button press needed
 
-
     [Header("HUD Elements")]
-    public TextMeshProUGUI winText;
+    public GameObject winText;
     public TextMeshProUGUI deathText;
     public TextMeshProUGUI coinText;
     public Button playAgain;
@@ -75,8 +79,7 @@ public class LevelManager : MonoBehaviour
 
         if (winText != null)
         {
-            winText.gameObject.SetActive(true);
-            winText.enabled = true;
+            winText.SetActive(true);
         }
     }
 
@@ -89,5 +92,9 @@ public class LevelManager : MonoBehaviour
             deathText.gameObject.SetActive(true);
             deathText.enabled = true;
         }
+    }
+
+    public void LoadNextLevel() {
+        SceneManager.LoadScene(nextLevelName);
     }
 }

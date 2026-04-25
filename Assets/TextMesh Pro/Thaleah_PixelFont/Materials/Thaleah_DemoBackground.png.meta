@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 16, y: 16, z: 16, w: 16}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -79,7 +79,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -92,7 +92,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -108,18 +108,348 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71.33333
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05077de54cf8b59478dc58237d806d49
+      internalID: 1429227824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 71.33333
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f71e8ae5fa92b4db3ff15e963e0bcb
+      internalID: 1090831023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 71.33333
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d748797e497844a23c9d909df7b64
+      internalID: -1828635039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 71.33333
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee217a37e9462e14f9feec368831e05f
+      internalID: -1481045757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 71.33333
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfebbe89f238c448b37de82467b1ee1
+      internalID: 205976539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36.333332
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47776a9f29bbd18499d4e31a26470b96
+      internalID: -558406183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 36.333332
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9810799b8aa819449aad9c0bd6a4d9b5
+      internalID: -1438817859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 36.333332
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfa8ad10d6291144b418f6e5ae9dcad
+      internalID: 36855240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_8
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 36.333332
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01f8b2493b304148911abcc02b8d7ed
+      internalID: 1899388735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 36.333332
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0618f76e049037a4db81f5bbfb6d7996
+      internalID: 1159822790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333321
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b19ca1153fdc8e4a88115bb9e6b2e85
+      internalID: 1463978521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1.3333321
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9fd2616def5c2479c05042fb2a5d7e
+      internalID: 77875692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1.3333321
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589bbfa93172c8f468b5fe32234af072
+      internalID: 1215506062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1.3333321
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b70ce03e429da42ac49f9386082f76
+      internalID: 1428419896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thaleah_DemoBackground_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1.3333321
+        width: 39
+        height: 35.666668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae28b2710a85754da9455de35a08074
+      internalID: -2047542124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thaleah_DemoBackground_0: 1429227824
+      Thaleah_DemoBackground_1: 1090831023
+      Thaleah_DemoBackground_10: 1463978521
+      Thaleah_DemoBackground_11: 77875692
+      Thaleah_DemoBackground_12: 1215506062
+      Thaleah_DemoBackground_13: 1428419896
+      Thaleah_DemoBackground_14: -2047542124
+      Thaleah_DemoBackground_2: -1828635039
+      Thaleah_DemoBackground_3: -1481045757
+      Thaleah_DemoBackground_4: 205976539
+      Thaleah_DemoBackground_5: -558406183
+      Thaleah_DemoBackground_6: -1438817859
+      Thaleah_DemoBackground_7: 36855240
+      Thaleah_DemoBackground_8: 1899388735
+      Thaleah_DemoBackground_9: 1159822790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
