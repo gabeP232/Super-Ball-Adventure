@@ -63,6 +63,12 @@ public class LevelManager : MonoBehaviour
 
     }
 
+    public void CheckWin() {
+        if (coinsCollected >= coinsRequired) {
+            TriggerWin();
+        }
+    }
+
     private void TriggerWin()
     {
         levelComplete = true;
