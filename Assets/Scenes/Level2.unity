@@ -1322,7 +1322,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
@@ -1904,8 +1904,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6808964501291658407, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 167587134}
   m_SourcePrefab: {fileID: 100100000, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
+--- !u!1 &167587133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6808964501291658407, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
+  m_PrefabInstance: {fileID: 167587132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &167587134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167587133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4d489e89c595743b9c75f1d4b09556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 3529ee20ddeaa1646b88a8c6ba856024, type: 2}
+  - {fileID: 2100000, guid: 6314f8b6bb1bebd4e984a4023676bbf1, type: 2}
+  - {fileID: 2100000, guid: 2479640b5d0fe704e83e844646c5da0e, type: 2}
+  - {fileID: 2100000, guid: 5fbbaf32ea9ef7f4882174d676b7bba1, type: 2}
+  - {fileID: 2100000, guid: 18234538f8f77fa41a330e80488a367a, type: 2}
+  - {fileID: 2100000, guid: 9418a5fcbafe84543998bd7c831a9ee1, type: 2}
 --- !u!1 &168071653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6509902596483957529, guid: 6f1f8e3d47586fa4db0d18ef83782d86, type: 3}
@@ -2508,7 +2536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
@@ -5890,7 +5918,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
@@ -7141,7 +7169,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
@@ -21416,7 +21444,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
@@ -21941,7 +21969,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 167587134}
         m_TargetAssemblyTypeName: BallMaterialChange, Assembly-CSharp
         m_MethodName: SetMaterial
         m_Mode: 3
