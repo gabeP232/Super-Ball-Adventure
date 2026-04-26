@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   cam: {fileID: 0}
+  deathFX: {fileID: 0}
 --- !u!114 &2719824222881455015
 MonoBehaviour:
   m_ObjectHideFlags: 0
