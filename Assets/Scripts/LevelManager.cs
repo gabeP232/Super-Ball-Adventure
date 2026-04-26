@@ -85,7 +85,14 @@ public class LevelManager : MonoBehaviour
 
     public void PlayerDied() {
         Debug.Log("Player died");
+        StartCoroutine(WaitForFx());
+    }
 
+    // IEnumerator to pause, so it gets the chance to see the death fx
+    private IEnumerator WaitForFx()
+    {
+        // wait 2 seconds before showing the "try again" screen
+        yield return new WaitForSeconds(2f);
         if (deathUI != null) {
             deathUI.gameObject.SetActive(true);
         }
