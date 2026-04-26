@@ -7719,7 +7719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4d489e89c595743b9c75f1d4b09556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRenderer: {fileID: 0}
+  target: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: 3529ee20ddeaa1646b88a8c6ba856024, type: 2}
   - {fileID: 2100000, guid: 6314f8b6bb1bebd4e984a4023676bbf1, type: 2}
@@ -8434,6 +8434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909175458}
   - component: {fileID: 1909175457}
+  - component: {fileID: 1909175459}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -8453,7 +8454,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10cb26a97bc1f844cbc6a684864f56c1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.438
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8552,6 +8553,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1909175459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909175456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bc68adfb265824bb4b0ca24054025b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1936552090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
@@ -8894,6 +8907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990786567}
   - component: {fileID: 1990786568}
+  - component: {fileID: 1990786569}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -8971,7 +8985,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.25
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -8987,6 +9001,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1990786569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990786566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3881376fc683abb4b87dd68ce1a23d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1990786568}
 --- !u!1 &1996438260
 GameObject:
   m_ObjectHideFlags: 0
