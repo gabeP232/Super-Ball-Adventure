@@ -5,25 +5,28 @@ using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
 {
-    private const string VOLUME_PREF_KEY = "MasterVolume";
 
     [SerializeField] private Slider slider;
 
     private void Awake()
     {
-        // default at 0.25 volume
-        float savedVolume = PlayerPrefs.GetFloat(VOLUME_PREF_KEY, 0.25f);
-        slider.value = savedVolume;
-        AudioListener.volume = savedVolume;
+        // attach slider to the volume slider component
+        slider = GetComponent<Slider>();
+    }
 
+    private void OnEnable()
+    {
+        // get slider volume from the AudioManager
+        slider.value = AudioManager.Instance.GetVolume();
+        // if value is changed change it in the audio manager, which then also changes it here
         slider.onValueChanged.AddListener(OnSliderChanged);
     }
+
 
     // when volume slider is changed, change the presistent savedVolume
     private void OnSliderChanged(float value)
     {
-        AudioListener.volume = value;
-        PlayerPrefs.SetFloat(VOLUME_PREF_KEY, value);
-        PlayerPrefs.Save();
+        // set the volume in audio manager if changed
+        AudioManager.Instance.SetVolume(value);
     }
 }
