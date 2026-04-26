@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
 
     public float distance = 5f;
 
-    private float yaw = 0f;
+    private float yaw = -90f;
     private float pitch = 20f;
 
     // Update is called once per frame
