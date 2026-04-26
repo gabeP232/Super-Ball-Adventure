@@ -22,6 +22,10 @@ public class LevelSwitch : MonoBehaviour
         SceneManager.LoadScene(levelName);
     }
 
+    public void LoadLevel0()
+    {
+        LoadLevel("TitleScreenArea");
+    }
     public void LoadLevel1()
     {
         LoadLevel("Level1");
