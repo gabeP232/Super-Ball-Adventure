@@ -6269,6 +6269,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
   m_PrefabInstance: {fileID: 607336609}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &609255245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3690711728673830283, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+  m_PrefabInstance: {fileID: 1288212652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &609463282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6097349254958055848, guid: 83c92aa49bddae04582852c619c94e17, type: 3}
@@ -11207,9 +11212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelName: Level2
-  coinsRequired: 17
+  coinsRequired: 0
   buttonsRequired: 0
-  winUI: {fileID: 0}
+  winUI: {fileID: 609255245}
   deathUI: {fileID: 1734479942}
   coinText: {fileID: 895478038}
 --- !u!4 &1181705762
@@ -12457,6 +12462,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1794204503}
     m_Modifications:
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1181705761}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3690711728673830283, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
       propertyPath: m_Name
       value: WinUI
@@ -22540,11 +22561,11 @@ SceneRoots:
   - {fileID: 607331383}
   - {fileID: 1131824499}
   - {fileID: 1794204502}
+  - {fileID: 766914835}
   - {fileID: 569559431}
   - {fileID: 81094278}
   - {fileID: 1329592659}
   - {fileID: 1993395142}
-  - {fileID: 766914835}
   - {fileID: 62497713}
   - {fileID: 1556887422}
   - {fileID: 1376769066}

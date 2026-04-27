@@ -26985,6 +26985,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 840156799}
     m_Modifications:
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1607769674}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 238568181362266622, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3690711728673830283, guid: bf75d1517a647fa41a53383e6d40357c, type: 3}
       propertyPath: m_Name
       value: WinUI
