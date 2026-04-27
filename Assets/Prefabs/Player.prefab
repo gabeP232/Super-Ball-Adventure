@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   cam: {fileID: 0}
-  deathFX: {fileID: 0}
+  deathFX: {fileID: 7019427299761872749, guid: d0351e8764d8eb346b597d5b9e12cc09, type: 3}
+  deathSound: {fileID: 8300000, guid: 3c82fa357485dc84aa9d90eab40e6a04, type: 3}
 --- !u!114 &2719824222881455015
 MonoBehaviour:
   m_ObjectHideFlags: 0

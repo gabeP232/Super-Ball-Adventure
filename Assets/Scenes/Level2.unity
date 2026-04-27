@@ -1830,10 +1830,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 52926890}
-    - target: {fileID: 6048289100604435054, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
-      propertyPath: deathFX
-      value: 
-      objectReference: {fileID: 7019427299761872749, guid: d0351e8764d8eb346b597d5b9e12cc09, type: 3}
     - target: {fileID: 6808964501291658407, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
       propertyPath: m_Name
       value: Player

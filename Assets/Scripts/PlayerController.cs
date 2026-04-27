@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem deathFX;
 
+    // death sound effect
+    public AudioClip deathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,10 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Kill() {
+        if (deathSound != null)
+        {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position, 0.8f);
+        }
         if (deathFX != null) {
             Instantiate(deathFX, transform.position, Quaternion.identity);
         }
