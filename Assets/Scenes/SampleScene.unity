@@ -256,12 +256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa7b7a7c1afd1d4f80ff01c086f1b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevelName: 
   coinsRequired: 0
   buttonsRequired: 0
-  winText: {fileID: 0}
-  deathText: {fileID: 0}
+  winUI: {fileID: 0}
+  deathUI: {fileID: 0}
   coinText: {fileID: 0}
-  playAgain: {fileID: 0}
 --- !u!4 &666770783
 Transform:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 703409690}
-  sensitivity: 100
+  sensitivity: 1000
   distance: 5
 --- !u!1 &974140300
 GameObject:
@@ -1428,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575168184307555013, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.76
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 575168184307555013, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1470,6 +1470,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 6048289100604435054, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
+      propertyPath: dustParticles
+      value: 
+      objectReference: {fileID: 1296670051746622803, guid: ee8f3ac39b1f7b24ab1014494a432167, type: 3}
     - target: {fileID: 6808964501291658407, guid: 7a71e45c0a02eb543b1a2ff1a1802726, type: 3}
       propertyPath: m_Name
       value: Player

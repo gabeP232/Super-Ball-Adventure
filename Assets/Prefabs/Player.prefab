@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6750820794239225343}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.17, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,6 +156,9 @@ MonoBehaviour:
   cam: {fileID: 0}
   deathFX: {fileID: 7019427299761872749, guid: d0351e8764d8eb346b597d5b9e12cc09, type: 3}
   deathSound: {fileID: 8300000, guid: 3c82fa357485dc84aa9d90eab40e6a04, type: 3}
+  dustFXPrefab: {fileID: 1296670051746622803, guid: ee8f3ac39b1f7b24ab1014494a432167, type: 3}
+  dustEmissionRate: 5
+  groundCheckDistance: 1
 --- !u!114 &2719824222881455015
 MonoBehaviour:
   m_ObjectHideFlags: 0
